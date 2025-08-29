@@ -39,7 +39,7 @@ export default function HeroSection() {
           </p>
           <p className="mt-3">
             Beyond coding, I love exploring new technologies, contributing to community projects,  
-            and continuously improving myself as a developer. 🚀
+            and continuously improving myself as a developer. 
           </p>
         </motion.div>
 
