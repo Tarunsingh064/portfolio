@@ -48,8 +48,8 @@ const projects: Project[] = [
     title: "Portfolio Website",
     description: "A modern, responsive portfolio website with smooth animations and dark/light mode toggle.",
     image: "/portfolio.png", // Changed to more specific name
-    githubLink: "https://github.com/yourusername/portfolio", // Replace with actual
-    liveLink: "https://yourportfolio.vercel.app", // Replace with actual
+    githubLink: "https://github.com/Tarunsingh064/portfolio", // Replace with actual
+    liveLink: "https://portfolio-chi-kohl-jx955bhsg8.vercel.app/#contact", // Replace with actual
     techStack: [
       { name: "Next.js", icon: <SiNextdotjs />, color: "text-black" },
       { name: "TypeScript", icon: <SiTypescript />, color: "text-blue-600" },
