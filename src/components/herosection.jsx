@@ -8,19 +8,20 @@ export default function HeroSection() {
   return (
     <section
       id="home"
-      className="relative flex flex-col md:flex-row items-center justify-center md:justify-between max-w-6xl mx-auto px-6 pt-32 pb-20"
+      className="relative flex flex-col md:flex-row items-center justify-center md:justify-between 
+                 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 sm:pt-28 md:pt-32 pb-16 sm:pb-20"
     >
       {/* Left Content */}
       <motion.div
         initial={{ opacity: 0, x: -40 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
-        className="text-center md:text-left space-y-6"
+        className="text-center md:text-left space-y-5 sm:space-y-6"
       >
-        <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight">
+        <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
           Hi, I’m <span className="text-indigo-400">Tarun Singh</span>
         </h1>
-        <p className="text-gray-300 max-w-xl text-lg">
+        <p className="text-gray-300 max-w-xl text-base sm:text-lg">
           I’m a passionate <span className="text-indigo-300">Full-Stack Developer</span> 
           who loves building modern web applications and solving real-world problems with code.
         </p>
@@ -30,7 +31,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.8 }}
-          className="mt-6 text-gray-400 max-w-xl text-base leading-relaxed"
+          className="mt-4 sm:mt-6 text-gray-400 max-w-xl text-sm sm:text-base leading-relaxed"
         >
           <p>
             I’m currently pursuing a <span className="text-indigo-400">B.Tech in Computer Science</span>.  
@@ -44,25 +45,31 @@ export default function HeroSection() {
         </motion.div>
 
         {/* Buttons (below bio) */}
-        <div className="flex justify-center md:justify-start gap-4 pt-6">
+        <div className="flex flex-wrap justify-center md:justify-start gap-3 sm:gap-4 pt-6">
           <a
             href="https://www.linkedin.com/in/tarun-singh-80ab4223a/"
             target="_blank"
-            className="flex items-center gap-2 px-5 py-2 rounded-xl bg-indigo-500 hover:bg-indigo-600 text-white font-medium transition"
+            className="flex items-center gap-2 px-4 sm:px-5 py-2 rounded-xl 
+                       bg-indigo-500 hover:bg-indigo-600 text-white text-sm sm:text-base 
+                       font-medium transition"
           >
             <FaLinkedin size={18} /> LinkedIn
           </a>
           <a
             href="https://github.com/Tarunsingh064/Tarunsingh064"
             target="_blank"
-            className="flex items-center gap-2 px-5 py-2 rounded-xl bg-gray-800 hover:bg-gray-700 text-white font-medium transition"
+            className="flex items-center gap-2 px-4 sm:px-5 py-2 rounded-xl 
+                       bg-gray-800 hover:bg-gray-700 text-white text-sm sm:text-base 
+                       font-medium transition"
           >
             <FaGithub size={18} /> GitHub
           </a>
           <a
             href="https://leetcode.com/u/Tarun_singh006/"
             target="_blank"
-            className="flex items-center gap-2 px-5 py-2 rounded-xl bg-yellow-500 hover:bg-yellow-600 text-black font-medium transition"
+            className="flex items-center gap-2 px-4 sm:px-5 py-2 rounded-xl 
+                       bg-yellow-500 hover:bg-yellow-600 text-black text-sm sm:text-base 
+                       font-medium transition"
           >
             <SiLeetcode size={18} /> LeetCode
           </a>
@@ -74,21 +81,26 @@ export default function HeroSection() {
         initial={{ opacity: 0, x: 40 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
-        className="mt-10 md:mt-0 relative"
+        className="mt-10 md:mt-0 relative flex justify-center md:justify-end"
       >
         {/* Background figures */}
-        <div className="absolute -top-10 -left-10 w-40 h-40 bg-purple-500 rounded-full blur-3xl opacity-30 animate-pulse" />
-        <div className="absolute -bottom-10 -right-12 w-52 h-52 bg-indigo-500 rounded-full blur-3xl opacity-20 animate-bounce" />
-        <div className="absolute top-1/2 -left-16 w-28 h-28 bg-pink-500 rounded-full blur-2xl opacity-25 animate-spin-slow" />
+        <div className="absolute -top-8 -left-8 w-28 h-28 sm:w-36 sm:h-36 md:w-40 md:h-40 
+                        bg-purple-500 rounded-full blur-3xl opacity-30 animate-pulse" />
+        <div className="absolute -bottom-10 -right-10 w-40 h-40 sm:w-48 sm:h-48 md:w-52 md:h-52 
+                        bg-indigo-500 rounded-full blur-3xl opacity-20 animate-bounce" />
+        <div className="absolute top-1/2 -left-10 w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 
+                        bg-pink-500 rounded-full blur-2xl opacity-25 animate-spin-slow" />
 
         {/* Profile Image */}
         <motion.div
           whileHover={{ scale: 1.05 }}
-          className="relative w-44 h-44 md:w-60 md:h-60 rounded-full p-[3px] 
-                     bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 
-                     shadow-2xl mx-auto md:mx-0"
+          className="relative w-32 h-32 sm:w-44 sm:h-44 md:w-56 md:h-56 lg:w-60 lg:h-60 
+                     rounded-full p-[3px] bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 
+                     shadow-2xl"
         >
-          <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 blur-2xl opacity-50 animate-pulse" />
+          <div className="absolute inset-0 rounded-full bg-gradient-to-tr 
+                          from-indigo-500 via-purple-500 to-pink-500 
+                          blur-2xl opacity-50 animate-pulse" />
           <img
             src="/profile.jpg"
             alt="Profile Picture"
