@@ -15,17 +15,7 @@ const education = [
     achievements: ["Manthan kirti"],
     type: "college"
   },
-  {
-    degree: "High Secondary Education",
-    institution: "D.A.V Public School",
-    period: "2011 - 2024",
-    location: "Kailash HIlls, New Delhi",
-    description: "Focus on Mathematics and Computer Science. Participated in national science fair and coding competitions.",
-    grades: "Percentage: 76%",
-    courses: ["Mathematics", "Physics", "Computer Science", "Chemistry"],
-    achievements: ["NA"],
-    type: "school"
-  },
+
   ];
 
 export default function Education() {
