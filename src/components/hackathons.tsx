@@ -14,6 +14,16 @@ const hackathons = [
     achievements: ["NA"],
     icon: <FaTrophy className="text-yellow-400" />
   },
+  {
+    title: "Hackground 2k25 ",
+    placement: "cleared 2 rounds",
+    team: "Binary Brains",
+    date: "Feb 2025",
+    description: "ide of delhi vypar connect",
+    technologies: ["React", "Django rest framework","Sqlite"],
+    achievements: ["cleared 2 rounds"],
+    icon: <FaTrophy className="text-yellow-400" />
+  },
 
 ];
 
